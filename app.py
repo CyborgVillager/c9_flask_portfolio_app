@@ -35,27 +35,15 @@ def add_numbers_post():
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
 
-@app.route('/shopping_list', methods=['GET','POST'])
-def shopping_list_post():
-	  # --> ['5', '6', '8']
-	  # print(type(request.form['text']))
+@app.route('/todo_list', methods=['GET','POST'])
+def todo_list_post():	
 
     if request.method == 'GET':
-      return render_template('shopping_list.html')
-    elif request.method == 'POST':
-          print(request.form['text'].split())
-          
-          shop_list = []
-          try:
-            for item in request.form['text'].split():
+      return render_template('todolist.html')
+    elif request.method == 'POST':            
+         
               
-              shop_list.append(item)
-
-              
-              
-            return render_template('shopping_list.html', result="\n".join([str(item) for item in shop_list]))
-          except ValueError:
-            return "Easy now! Let's keep it simple! Just words with a space between them"
+           
           
   	      
 @app.route('/time', methods=['GET','POST'])
