@@ -14,9 +14,7 @@ def home_page():
 	return render_template('index.html')
 
 @app.route('/<name>')
-def profile(name):
-	#new_name = str(name) + " Likes to eat mangos"
-	name_input = input('What is your name?')
+def profile(name):	
 	return render_template('index.html', name=new_input)
 
 
