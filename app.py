@@ -35,8 +35,8 @@ def add_numbers_post():
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
 
-@app.route('/todo_list')
-	def todo_list():
+@app.route('/todolist')
+	def todolist():
 	# testing stuff
 	return render_template('todolist.html')
 
