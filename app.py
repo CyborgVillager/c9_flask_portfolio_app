@@ -35,12 +35,12 @@ def add_numbers_post():
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
 
-@app.route('/todo_list', methods=['GET','POST'])
-def todo_list_post():	
+@app.route('/todo_list')
+	def todo_list():
+	# testing stuff
+	return render_template('todolist.html')
 
-    if request.method == 'GET':
-      return render_template('todolist.html')
-    elif request.method == 'POST':            
+        
          
               
            
