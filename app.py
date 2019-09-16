@@ -68,6 +68,10 @@ def time_post():
 def python_apps_page():
 	# testing stuff
 	return render_template('python_apps.html')
+@app.route('/todolist')
+def todolist_page():
+	# testing stuff
+	return render_template('todolist.html')
 
 
 @app.route('/blog', methods=['GET'])
